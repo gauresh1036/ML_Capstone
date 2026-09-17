@@ -126,17 +126,4 @@ python -m jupyter nbconvert --to notebook --execute notebooks/classification.ipy
 > All **analysis, observations, interpretations, and feature-engineering decisions**  
 > are original work by the team.
 
----
-
-## Team Responsibilities (Review 1 Three-Part Division)
-
-To ensure modularity and comprehensive pipeline ownership (in accordance with Section 7.4 of the guidelines), Review 1 is divided into three distinct technical parts, with **Member 1** taking the lead on the most complex non-linear architectures, hyperparameter optimization, and statistical diagnostics:
-
-| Part | Member | Title / Role | Technical Scope & Responsibilities | Key Complexity |
-| :--- | :--- | :--- | :--- | :--- |
-| **Part 1** | **Member 1 (Lead)** | **Advanced Ensembles, Optimization & Diagnostics** | • Polynomial Features ($d=2$, 230 interaction terms)<br>• Non-linear models: SVR (RBF kernel), KNN ($k$-tuning)<br>• Tree Ensembles: Random Forest & Gradient Boosting<br>• `GridSearchCV` hyperparameter tuning<br>• 5-Fold Cross Validation ($R^2$, mean, std)<br>• Residual analysis & heteroscedasticity inspection<br>• GBR Feature Importances & `.pkl` serialization | **Highest:** Non-linear optimization, sequential boosting vs bagging, cross-validation, and diagnostic residual analysis. |
-| **Part 2** | **Member 2** | **Data Pipeline, EDA & Regularized Linear Models** | • Ames Housing loading, shape, and null audit<br>• Skewness & log transformation of target<br>• Correlation heatmap (top 20 predictors)<br>• Outlier removal (De Cock anomaly treatment)<br>• Domain Feature Engineering (`TotalSF`, `HouseAge`, `TotalBath`)<br>• OLS Linear Regression (coefficient interpretation)<br>• Regularization: Ridge ($L_2$), Lasso ($L_1$ sparsity), ElasticNet | **High:** Multicollinearity handling, $L_1$ vs $L_2$ shrinkage penalties, and data leakage prevention. |
-| **Part 3** | **Member 3** | **Classification Track Part A (Online Shoppers)** | • Online Shoppers loading & class imbalance audit (84.5% vs 15.5%)<br>• Session behavioral EDA & month conversion analysis<br>• Stratified train/test split & session feature engineering<br>• 5 Part-A Classifiers: Logistic Regression (odds ratios), KNN ($k$-tuning), GaussianNB (independence), Decision Tree (depth & `plot_tree`), SVC ($C$/kernel tuning)<br>• Confusion matrix 2x3 grid & Weighted F1 ranking | **High:** Severe class imbalance handling, odds ratio interpretation, and tree pruning. |
-
-*(Update Member 1, Member 2, and Member 3 with your actual team names and roll numbers)*
 
