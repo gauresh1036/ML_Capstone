@@ -73,10 +73,7 @@ ML Capstone/
 │   └── online_shoppers_intention.csv
 ├── notebooks/                         ← Executed notebooks with all outputs visible
 │   ├── regression.ipynb               ← Full Regression Track (Review 1)
-│   ├── classification.ipynb           ← Classification Track Part A (Review 1)
-│   ├── part1_member1_advanced_regression.ipynb    ← Member 1: Ensembles & Optimization
-│   ├── part2_member2_linear_regression.ipynb      ← Member 2: EDA & Linear Regularization
-│   └── part3_member3_classification_part_a.ipynb  ← Member 3: Classification Part A Pipeline
+│   └── classification.ipynb           ← Classification Track Part A (Review 1)
 ├── models/                            ← Serialized model artifacts (.pkl)
 │   ├── README.md
 │   ├── best_regression_gbr.pkl
