@@ -1,6 +1,6 @@
 # 23CSE301 ML Capstone — Review 1
 
-**Team:** [Your Team Name / Roll Numbers]  
+**Team:** Team Zenith 
 **Academic Year:** 2026–27  
 **Subject:** 23CSE301 Machine Learning  
 
