@@ -1,0 +1,11 @@
+Model,Part,Best parameters,F1 (w) baseline,F1 (w) tuned,Δ F1 (w),ROC-AUC baseline,ROC-AUC tuned,Δ ROC-AUC
+Gradient Boosting,B,"{'learning_rate': 0.03, 'max_depth': 4, 'n_estimators': 200, 'subsample': 1.0}",0.8977,0.8998,0.0020,0.9354,0.9358,0.0004
+Random Forest,B,"{'max_depth': 20, 'max_features': 0.5, 'min_samples_leaf': 3, 'n_estimators': 100}",0.8963,0.8995,0.0032,0.9233,0.9285,0.0052
+Bagging (Decision Tree),B,"{'estimator__max_depth': 8, 'max_samples': 0.8, 'n_estimators': 200}",0.8861,0.8988,0.0127,0.8966,0.9326,0.0360
+Support Vector Machine,A,"{'C': 1, 'gamma': 'scale', 'kernel': 'rbf'}",0.8975,0.8975,0.0000,0.8785,0.8785,0.0000
+MLP Neural Network,B,"{'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (64, 32)}",0.8736,0.8973,0.0237,0.8844,0.9271,0.0427
+Logistic Regression,A,{'C': 1},0.8931,0.8931,0.0000,0.9174,0.9174,0.0000
+Decision Tree,A,"{'criterion': 'gini', 'max_depth': 6, 'min_samples_leaf': 10}",0.8601,0.8924,0.0323,0.7406,0.9174,0.1769
+AdaBoost,B,"{'learning_rate': 0.1, 'n_estimators': 25}",0.8905,0.8869,-0.0036,0.9219,0.9015,-0.0205
+K-Nearest Neighbours,A,"{'metric': 'euclidean', 'n_neighbors': 17, 'weights': 'uniform'}",0.8870,0.8827,-0.0044,0.8666,0.8986,0.0321
+Gaussian Naive Bayes,A,{'var_smoothing': 1.0},0.7641,0.8423,0.0781,0.8526,0.8691,0.0164

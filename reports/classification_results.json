@@ -1,0 +1,407 @@
+{
+  "track": "classification",
+  "dataset": "Online Shoppers Purchasing Intention (UCI)",
+  "n_rows_after_cleaning": 12205,
+  "n_train": 9764,
+  "n_test": 2441,
+  "purchase_rate": 0.1563,
+  "best_model": "Gradient Boosting",
+  "best_params": {
+    "learning_rate": 0.03,
+    "max_depth": 4,
+    "n_estimators": 200,
+    "subsample": 1.0
+  },
+  "test_metrics": {
+    "Accuracy": 0.9029,
+    "Precision (w)": 0.8982,
+    "Recall (w)": 0.9029,
+    "F1 (w)": 0.8998,
+    "ROC-AUC": 0.9358,
+    "Purchase Recall": 0.6178,
+    "Purchase F1": 0.6657
+  },
+  "cv_top2": {
+    "Gradient Boosting": {
+      "Accuracy mean": 0.9031,
+      "Accuracy std": 0.0051,
+      "Precision (w) mean": 0.8976,
+      "Precision (w) std": 0.0055,
+      "Recall (w) mean": 0.9031,
+      "Recall (w) std": 0.0051,
+      "F1 (w) mean": 0.8989,
+      "F1 (w) std": 0.0051,
+      "ROC-AUC mean": 0.9302,
+      "ROC-AUC std": 0.0063
+    },
+    "Random Forest": {
+      "Accuracy mean": 0.9009,
+      "Accuracy std": 0.0036,
+      "Precision (w) mean": 0.8954,
+      "Precision (w) std": 0.0037,
+      "Recall (w) mean": 0.9009,
+      "Recall (w) std": 0.0036,
+      "F1 (w) mean": 0.8969,
+      "F1 (w) std": 0.0035,
+      "ROC-AUC mean": 0.9273,
+      "ROC-AUC std": 0.0047
+    }
+  },
+  "decision_threshold": 0.31,
+  "comparison": [
+    {
+      "Model": "Gradient Boosting",
+      "Part": "B",
+      "Accuracy": 0.9029,
+      "Precision (w)": 0.8982,
+      "Recall (w)": 0.9029,
+      "F1 (w)": 0.8998,
+      "ROC-AUC": 0.9358,
+      "Purchase Recall": 0.6178,
+      "Purchase F1": 0.6657
+    },
+    {
+      "Model": "Random Forest",
+      "Part": "B",
+      "Accuracy": 0.9029,
+      "Precision (w)": 0.8979,
+      "Recall (w)": 0.9029,
+      "F1 (w)": 0.8995,
+      "ROC-AUC": 0.9285,
+      "Purchase Recall": 0.6126,
+      "Purchase F1": 0.6638
+    },
+    {
+      "Model": "Bagging (Decision Tree)",
+      "Part": "B",
+      "Accuracy": 0.9017,
+      "Precision (w)": 0.8972,
+      "Recall (w)": 0.9017,
+      "F1 (w)": 0.8988,
+      "ROC-AUC": 0.9326,
+      "Purchase Recall": 0.6204,
+      "Purchase F1": 0.6639
+    },
+    {
+      "Model": "Support Vector Machine",
+      "Part": "A",
+      "Accuracy": 0.9021,
+      "Precision (w)": 0.896,
+      "Recall (w)": 0.9021,
+      "F1 (w)": 0.8975,
+      "ROC-AUC": 0.8785,
+      "Purchase Recall": 0.5864,
+      "Purchase F1": 0.6521
+    },
+    {
+      "Model": "MLP Neural Network",
+      "Part": "B",
+      "Accuracy": 0.8996,
+      "Precision (w)": 0.8958,
+      "Recall (w)": 0.8996,
+      "F1 (w)": 0.8973,
+      "ROC-AUC": 0.9271,
+      "Purchase Recall": 0.6257,
+      "Purchase F1": 0.6611
+    },
+    {
+      "Model": "Logistic Regression",
+      "Part": "A",
+      "Accuracy": 0.8955,
+      "Precision (w)": 0.8914,
+      "Recall (w)": 0.8955,
+      "F1 (w)": 0.8931,
+      "ROC-AUC": 0.9174,
+      "Purchase Recall": 0.6126,
+      "Purchase F1": 0.6473
+    },
+    {
+      "Model": "Decision Tree",
+      "Part": "A",
+      "Accuracy": 0.8959,
+      "Precision (w)": 0.8905,
+      "Recall (w)": 0.8959,
+      "F1 (w)": 0.8924,
+      "ROC-AUC": 0.9174,
+      "Purchase Recall": 0.5916,
+      "Purchase F1": 0.6402
+    },
+    {
+      "Model": "AdaBoost",
+      "Part": "B",
+      "Accuracy": 0.8873,
+      "Precision (w)": 0.8865,
+      "Recall (w)": 0.8873,
+      "F1 (w)": 0.8869,
+      "ROC-AUC": 0.9015,
+      "Purchase Recall": 0.6309,
+      "Purchase F1": 0.6367
+    },
+    {
+      "Model": "K-Nearest Neighbours",
+      "Part": "A",
+      "Accuracy": 0.889,
+      "Precision (w)": 0.8806,
+      "Recall (w)": 0.889,
+      "F1 (w)": 0.8827,
+      "ROC-AUC": 0.8986,
+      "Purchase Recall": 0.5262,
+      "Purchase F1": 0.5973
+    },
+    {
+      "Model": "Gaussian Naive Bayes",
+      "Part": "A",
+      "Accuracy": 0.8251,
+      "Precision (w)": 0.8823,
+      "Recall (w)": 0.8251,
+      "F1 (w)": 0.8423,
+      "ROC-AUC": 0.8691,
+      "Purchase Recall": 0.8115,
+      "Purchase F1": 0.5922
+    }
+  ],
+  "tuning_gains": [
+    {
+      "Model": "Gradient Boosting",
+      "Part": "B",
+      "Best parameters": "{'learning_rate': 0.03, 'max_depth': 4, 'n_estimators': 200, 'subsample': 1.0}",
+      "F1 (w) baseline": 0.8977,
+      "F1 (w) tuned": 0.8998,
+      "\u0394 F1 (w)": 0.002,
+      "ROC-AUC baseline": 0.9354,
+      "ROC-AUC tuned": 0.9358,
+      "\u0394 ROC-AUC": 0.0004
+    },
+    {
+      "Model": "Random Forest",
+      "Part": "B",
+      "Best parameters": "{'max_depth': 20, 'max_features': 0.5, 'min_samples_leaf': 3, 'n_estimators': 100}",
+      "F1 (w) baseline": 0.8963,
+      "F1 (w) tuned": 0.8995,
+      "\u0394 F1 (w)": 0.0032,
+      "ROC-AUC baseline": 0.9233,
+      "ROC-AUC tuned": 0.9285,
+      "\u0394 ROC-AUC": 0.0052
+    },
+    {
+      "Model": "Bagging (Decision Tree)",
+      "Part": "B",
+      "Best parameters": "{'estimator__max_depth': 8, 'max_samples': 0.8, 'n_estimators': 200}",
+      "F1 (w) baseline": 0.8861,
+      "F1 (w) tuned": 0.8988,
+      "\u0394 F1 (w)": 0.0127,
+      "ROC-AUC baseline": 0.8966,
+      "ROC-AUC tuned": 0.9326,
+      "\u0394 ROC-AUC": 0.036
+    },
+    {
+      "Model": "Support Vector Machine",
+      "Part": "A",
+      "Best parameters": "{'C': 1, 'gamma': 'scale', 'kernel': 'rbf'}",
+      "F1 (w) baseline": 0.8975,
+      "F1 (w) tuned": 0.8975,
+      "\u0394 F1 (w)": 0.0,
+      "ROC-AUC baseline": 0.8785,
+      "ROC-AUC tuned": 0.8785,
+      "\u0394 ROC-AUC": 0.0
+    },
+    {
+      "Model": "MLP Neural Network",
+      "Part": "B",
+      "Best parameters": "{'activation': 'tanh', 'alpha': 0.01, 'early_stopping': True, 'hidden_layer_sizes': (64, 32)}",
+      "F1 (w) baseline": 0.8736,
+      "F1 (w) tuned": 0.8973,
+      "\u0394 F1 (w)": 0.0237,
+      "ROC-AUC baseline": 0.8844,
+      "ROC-AUC tuned": 0.9271,
+      "\u0394 ROC-AUC": 0.0427
+    },
+    {
+      "Model": "Logistic Regression",
+      "Part": "A",
+      "Best parameters": "{'C': 1}",
+      "F1 (w) baseline": 0.8931,
+      "F1 (w) tuned": 0.8931,
+      "\u0394 F1 (w)": 0.0,
+      "ROC-AUC baseline": 0.9174,
+      "ROC-AUC tuned": 0.9174,
+      "\u0394 ROC-AUC": 0.0
+    },
+    {
+      "Model": "Decision Tree",
+      "Part": "A",
+      "Best parameters": "{'criterion': 'gini', 'max_depth': 6, 'min_samples_leaf': 10}",
+      "F1 (w) baseline": 0.8601,
+      "F1 (w) tuned": 0.8924,
+      "\u0394 F1 (w)": 0.0323,
+      "ROC-AUC baseline": 0.7406,
+      "ROC-AUC tuned": 0.9174,
+      "\u0394 ROC-AUC": 0.1769
+    },
+    {
+      "Model": "AdaBoost",
+      "Part": "B",
+      "Best parameters": "{'learning_rate': 0.1, 'n_estimators': 25}",
+      "F1 (w) baseline": 0.8905,
+      "F1 (w) tuned": 0.8869,
+      "\u0394 F1 (w)": -0.0036,
+      "ROC-AUC baseline": 0.9219,
+      "ROC-AUC tuned": 0.9015,
+      "\u0394 ROC-AUC": -0.0205
+    },
+    {
+      "Model": "K-Nearest Neighbours",
+      "Part": "A",
+      "Best parameters": "{'metric': 'euclidean', 'n_neighbors': 17, 'weights': 'uniform'}",
+      "F1 (w) baseline": 0.887,
+      "F1 (w) tuned": 0.8827,
+      "\u0394 F1 (w)": -0.0044,
+      "ROC-AUC baseline": 0.8666,
+      "ROC-AUC tuned": 0.8986,
+      "\u0394 ROC-AUC": 0.0321
+    },
+    {
+      "Model": "Gaussian Naive Bayes",
+      "Part": "A",
+      "Best parameters": "{'var_smoothing': 1.0}",
+      "F1 (w) baseline": 0.7641,
+      "F1 (w) tuned": 0.8423,
+      "\u0394 F1 (w)": 0.0781,
+      "ROC-AUC baseline": 0.8526,
+      "ROC-AUC tuned": 0.8691,
+      "\u0394 ROC-AUC": 0.0164
+    }
+  ],
+  "input_schema": {
+    "numeric_ranges": {
+      "Administrative": [
+        0.0,
+        27.0,
+        1.0
+      ],
+      "Administrative_Duration": [
+        0.0,
+        3398.75,
+        7.5
+      ],
+      "Informational": [
+        0.0,
+        24.0,
+        0.0
+      ],
+      "Informational_Duration": [
+        0.0,
+        2549.375,
+        0.0
+      ],
+      "ProductRelated": [
+        0.0,
+        705.0,
+        18.0
+      ],
+      "ProductRelated_Duration": [
+        0.0,
+        63973.52223,
+        598.9369047499999
+      ],
+      "BounceRates": [
+        0.0,
+        0.2,
+        0.0031124675
+      ],
+      "ExitRates": [
+        0.0,
+        0.2,
+        0.0251564025
+      ],
+      "PageValues": [
+        0.0,
+        361.7637419,
+        0.0
+      ],
+      "SpecialDay": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "months": [
+      "Feb",
+      "Mar",
+      "May",
+      "June",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "visitor_types": [
+      "New_Visitor",
+      "Other",
+      "Returning_Visitor"
+    ],
+    "codes": {
+      "OperatingSystems": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "Browser": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "Region": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "TrafficType": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    }
+  },
+  "random_state": 42
+}
