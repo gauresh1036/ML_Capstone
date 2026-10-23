@@ -1,0 +1,9 @@
+# Minimal runtime for the Streamlit GUI (also used by Streamlit Community Cloud).
+# scikit-learn must match the version that created models/*.pkl.
+streamlit==1.66.1
+scikit-learn==1.8.0
+numpy==2.3.5
+pandas==3.0.2
+plotly==7.1.0
+joblib==1.5.3
+matplotlib==3.10.9      # needed by pandas Styler.background_gradient
