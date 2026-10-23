@@ -1,0 +1,11 @@
+Model,R2 baseline,R2,Δ R2,RMSE baseline,RMSE,Δ RMSE,Best parameters
+Support Vector Regressor,0.9097,0.9315,0.0219,21289.1296,18533.0799,-2756.0497,"{'C': 0.01, 'epsilon': 0.05, 'kernel': 'linear'}"
+ElasticNet,-0.0415,0.9313,0.9728,72291.2742,18567.5939,-53723.6803,"{'alpha': 0.001, 'l1_ratio': 0.3}"
+Lasso Regression,-0.0415,0.9313,0.9728,72291.2742,18572.0804,-53719.1938,{'alpha': 0.0003162}
+Gradient Boosting,0.9221,0.9298,0.0077,19766.2312,18768.6823,-997.5489,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 600, 'subsample': 0.8}"
+Ridge Regression,0.9228,0.9275,0.0047,19677.3154,19075.0367,-602.2787,{'alpha': 31.62}
+Linear Regression,0.9234,0.9234,0.0000,19609.7267,19609.7267,0.0000,— (no hyper-parameters)
+Random Forest,0.9120,0.9215,0.0094,21007.5735,19849.4347,-1158.1388,"{'max_depth': 20, 'max_features': 0.33, 'n_estimators': 400}"
+KNN Regressor,0.8760,0.8893,0.0133,24940.9693,23567.7248,-1373.2445,"{'n_neighbors': 5, 'p': 1, 'weights': 'distance'}"
+Polynomial Regression,0.8732,0.8732,0.0000,25227.1327,25227.1327,0.0000,{'degree': 1}
+Decision Tree,0.7931,0.8430,0.0499,32222.9000,28067.2518,-4155.6482,"{'max_depth': 10, 'min_samples_leaf': 10}"

@@ -1,0 +1,329 @@
+{
+  "track": "regression",
+  "dataset": "Ames Housing",
+  "n_rows_after_cleaning": 2901,
+  "n_train": 2320,
+  "n_test": 581,
+  "target_transform": "log1p / expm1",
+  "median_price": 160000.0,
+  "best_model": "ElasticNet",
+  "best_params": {
+    "alpha": 0.001,
+    "l1_ratio": 0.3
+  },
+  "test_metrics": {
+    "R2": 0.9313,
+    "RMSE": 18567.5939,
+    "MAE": 12660.4852
+  },
+  "cv_top2": {
+    "Support Vector Regressor": {
+      "CV R\u00b2 mean": 0.9289,
+      "CV R\u00b2 std": 0.0125,
+      "CV RMSE mean": 19028.5254,
+      "CV MAE mean": 12670.0949,
+      "fold R\u00b2": [
+        0.9255,
+        0.9211,
+        0.952,
+        0.9302,
+        0.9157
+      ]
+    },
+    "ElasticNet": {
+      "CV R\u00b2 mean": 0.9311,
+      "CV R\u00b2 std": 0.0104,
+      "CV RMSE mean": 18749.3811,
+      "CV MAE mean": 12858.2945,
+      "fold R\u00b2": [
+        0.9253,
+        0.9186,
+        0.9496,
+        0.9295,
+        0.9323
+      ]
+    }
+  },
+  "comparison": [
+    {
+      "Model": "Support Vector Regressor",
+      "R2": 0.9315,
+      "RMSE": 18533.0799,
+      "MAE": 12367.8616
+    },
+    {
+      "Model": "ElasticNet",
+      "R2": 0.9313,
+      "RMSE": 18567.5939,
+      "MAE": 12660.4852
+    },
+    {
+      "Model": "Lasso Regression",
+      "R2": 0.9313,
+      "RMSE": 18572.0804,
+      "MAE": 12667.866
+    },
+    {
+      "Model": "Gradient Boosting",
+      "R2": 0.9298,
+      "RMSE": 18768.6823,
+      "MAE": 12290.2629
+    },
+    {
+      "Model": "Ridge Regression",
+      "R2": 0.9275,
+      "RMSE": 19075.0367,
+      "MAE": 12730.2227
+    },
+    {
+      "Model": "Linear Regression",
+      "R2": 0.9234,
+      "RMSE": 19609.7267,
+      "MAE": 12909.0902
+    },
+    {
+      "Model": "Random Forest",
+      "R2": 0.9215,
+      "RMSE": 19849.4347,
+      "MAE": 12916.4601
+    },
+    {
+      "Model": "KNN Regressor",
+      "R2": 0.8893,
+      "RMSE": 23567.7248,
+      "MAE": 16094.5408
+    },
+    {
+      "Model": "Polynomial Regression",
+      "R2": 0.8732,
+      "RMSE": 25227.1327,
+      "MAE": 17634.3613
+    },
+    {
+      "Model": "Decision Tree",
+      "R2": 0.843,
+      "RMSE": 28067.2518,
+      "MAE": 19856.4363
+    }
+  ],
+  "tuning_gains": [
+    {
+      "Model": "Support Vector Regressor",
+      "R2 baseline": 0.9097,
+      "R2": 0.9315,
+      "\u0394 R2": 0.0219,
+      "RMSE baseline": 21289.1296,
+      "RMSE": 18533.0799,
+      "\u0394 RMSE": -2756.0497,
+      "Best parameters": "{'C': 0.01, 'epsilon': 0.05, 'kernel': 'linear'}"
+    },
+    {
+      "Model": "ElasticNet",
+      "R2 baseline": -0.0415,
+      "R2": 0.9313,
+      "\u0394 R2": 0.9728,
+      "RMSE baseline": 72291.2742,
+      "RMSE": 18567.5939,
+      "\u0394 RMSE": -53723.6803,
+      "Best parameters": "{'alpha': 0.001, 'l1_ratio': 0.3}"
+    },
+    {
+      "Model": "Lasso Regression",
+      "R2 baseline": -0.0415,
+      "R2": 0.9313,
+      "\u0394 R2": 0.9728,
+      "RMSE baseline": 72291.2742,
+      "RMSE": 18572.0804,
+      "\u0394 RMSE": -53719.1938,
+      "Best parameters": "{'alpha': 0.0003162}"
+    },
+    {
+      "Model": "Gradient Boosting",
+      "R2 baseline": 0.9221,
+      "R2": 0.9298,
+      "\u0394 R2": 0.0077,
+      "RMSE baseline": 19766.2312,
+      "RMSE": 18768.6823,
+      "\u0394 RMSE": -997.5489,
+      "Best parameters": "{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 600, 'subsample': 0.8}"
+    },
+    {
+      "Model": "Ridge Regression",
+      "R2 baseline": 0.9228,
+      "R2": 0.9275,
+      "\u0394 R2": 0.0047,
+      "RMSE baseline": 19677.3154,
+      "RMSE": 19075.0367,
+      "\u0394 RMSE": -602.2787,
+      "Best parameters": "{'alpha': 31.62}"
+    },
+    {
+      "Model": "Linear Regression",
+      "R2 baseline": 0.9234,
+      "R2": 0.9234,
+      "\u0394 R2": 0.0,
+      "RMSE baseline": 19609.7267,
+      "RMSE": 19609.7267,
+      "\u0394 RMSE": 0.0,
+      "Best parameters": "\u2014 (no hyper-parameters)"
+    },
+    {
+      "Model": "Random Forest",
+      "R2 baseline": 0.912,
+      "R2": 0.9215,
+      "\u0394 R2": 0.0094,
+      "RMSE baseline": 21007.5735,
+      "RMSE": 19849.4347,
+      "\u0394 RMSE": -1158.1388,
+      "Best parameters": "{'max_depth': 20, 'max_features': 0.33, 'n_estimators': 400}"
+    },
+    {
+      "Model": "KNN Regressor",
+      "R2 baseline": 0.876,
+      "R2": 0.8893,
+      "\u0394 R2": 0.0133,
+      "RMSE baseline": 24940.9693,
+      "RMSE": 23567.7248,
+      "\u0394 RMSE": -1373.2445,
+      "Best parameters": "{'n_neighbors': 5, 'p': 1, 'weights': 'distance'}"
+    },
+    {
+      "Model": "Polynomial Regression",
+      "R2 baseline": 0.8732,
+      "R2": 0.8732,
+      "\u0394 R2": 0.0,
+      "RMSE baseline": 25227.1327,
+      "RMSE": 25227.1327,
+      "\u0394 RMSE": 0.0,
+      "Best parameters": "{'degree': 1}"
+    },
+    {
+      "Model": "Decision Tree",
+      "R2 baseline": 0.7931,
+      "R2": 0.843,
+      "\u0394 R2": 0.0499,
+      "RMSE baseline": 32222.9,
+      "RMSE": 28067.2518,
+      "\u0394 RMSE": -4155.6482,
+      "Best parameters": "{'max_depth': 10, 'min_samples_leaf': 10}"
+    }
+  ],
+  "feature_defaults": {
+    "MS SubClass": 20,
+    "MS Zoning": "RL",
+    "Lot Frontage": 68.0,
+    "Lot Area": 9410.5,
+    "Street": "Pave",
+    "Alley": "Grvl",
+    "Lot Shape": "Reg",
+    "Land Contour": "Lvl",
+    "Utilities": "AllPub",
+    "Lot Config": "Inside",
+    "Land Slope": "Gtl",
+    "Neighborhood": "NAmes",
+    "Condition 1": "Norm",
+    "Condition 2": "Norm",
+    "Bldg Type": "1Fam",
+    "House Style": "1Story",
+    "Overall Qual": 6.0,
+    "Overall Cond": 5.0,
+    "Year Built": 1972.0,
+    "Year Remod/Add": 1992.0,
+    "Roof Style": "Gable",
+    "Roof Matl": "CompShg",
+    "Exterior 1st": "VinylSd",
+    "Exterior 2nd": "VinylSd",
+    "Mas Vnr Type": "BrkFace",
+    "Mas Vnr Area": 0.0,
+    "Exter Qual": "TA",
+    "Exter Cond": "TA",
+    "Foundation": "PConc",
+    "Bsmt Qual": "TA",
+    "Bsmt Cond": "TA",
+    "Bsmt Exposure": "No",
+    "BsmtFin Type 1": "Unf",
+    "BsmtFin SF 1": 368.0,
+    "BsmtFin Type 2": "Unf",
+    "BsmtFin SF 2": 0.0,
+    "Bsmt Unf SF": 460.0,
+    "Total Bsmt SF": 982.5,
+    "Heating": "GasA",
+    "Heating QC": "Ex",
+    "Central Air": "Y",
+    "Electrical": "SBrkr",
+    "1st Flr SF": 1078.5,
+    "2nd Flr SF": 0.0,
+    "Low Qual Fin SF": 0.0,
+    "Gr Liv Area": 1432.0,
+    "Bsmt Full Bath": 0.0,
+    "Bsmt Half Bath": 0.0,
+    "Full Bath": 2.0,
+    "Half Bath": 0.0,
+    "Bedroom AbvGr": 3.0,
+    "Kitchen AbvGr": 1.0,
+    "Kitchen Qual": "TA",
+    "TotRms AbvGrd": 6.0,
+    "Functional": "Typ",
+    "Fireplaces": 1.0,
+    "Fireplace Qu": "Gd",
+    "Garage Type": "Attchd",
+    "Garage Yr Blt": 1979.0,
+    "Garage Finish": "Unf",
+    "Garage Cars": 2.0,
+    "Garage Area": 474.0,
+    "Garage Qual": "TA",
+    "Garage Cond": "TA",
+    "Paved Drive": "Y",
+    "Wood Deck SF": 0.0,
+    "Open Porch SF": 25.5,
+    "Enclosed Porch": 0.0,
+    "3Ssn Porch": 0.0,
+    "Screen Porch": 0.0,
+    "Pool Area": 0.0,
+    "Pool QC": "Fa",
+    "Fence": "MnPrv",
+    "Misc Feature": "Shed",
+    "Misc Val": 0.0,
+    "Mo Sold": 6.0,
+    "Yr Sold": 2008.0,
+    "Sale Type": "WD ",
+    "Sale Condition": "Normal",
+    "TotalSF": 2432.0,
+    "HouseAge": 36.0,
+    "RemodAge": 16.0,
+    "TotalBath": 2.0,
+    "HasPool": 0.0,
+    "HasGarage": 1.0
+  },
+  "neighborhoods": [
+    "Blmngtn",
+    "Blueste",
+    "BrDale",
+    "BrkSide",
+    "ClearCr",
+    "CollgCr",
+    "Crawfor",
+    "Edwards",
+    "Gilbert",
+    "Greens",
+    "GrnHill",
+    "IDOTRR",
+    "Landmrk",
+    "MeadowV",
+    "Mitchel",
+    "NAmes",
+    "NPkVill",
+    "NWAmes",
+    "NoRidge",
+    "NridgHt",
+    "OldTown",
+    "SWISU",
+    "Sawyer",
+    "SawyerW",
+    "Somerst",
+    "StoneBr",
+    "Timber",
+    "Veenker"
+  ],
+  "random_state": 42
+}
