@@ -1,0 +1,217 @@
+{
+  "track": "clustering",
+  "dataset": "Online Retail (UCI)",
+  "n_transactions_raw": 541909,
+  "n_transactions_clean": 391150,
+  "n_customers": 4334,
+  "snapshot_date": "2011-12-10",
+  "features": [
+    "Recency",
+    "Frequency",
+    "Monetary"
+  ],
+  "transform": "log1p + StandardScaler",
+  "k": 5,
+  "k_selection": [
+    {
+      "k": 2,
+      "Inertia": 6469.8064,
+      "Silhouette": 0.4328,
+      "Davies-Bouldin": 0.8904,
+      "Calinski-Harabasz": 4373.793,
+      "Smallest cluster %": 38.3479
+    },
+    {
+      "k": 3,
+      "Inertia": 4850.0751,
+      "Silhouette": 0.3382,
+      "Davies-Bouldin": 1.0411,
+      "Calinski-Harabasz": 3639.7832,
+      "Smallest cluster %": 17.4204
+    },
+    {
+      "k": 4,
+      "Inertia": 3918.8186,
+      "Silhouette": 0.3361,
+      "Davies-Bouldin": 1.0177,
+      "Calinski-Harabasz": 3345.445,
+      "Smallest cluster %": 16.1283
+    },
+    {
+      "k": 5,
+      "Inertia": 3262.3832,
+      "Silhouette": 0.3182,
+      "Davies-Bouldin": 0.9829,
+      "Calinski-Harabasz": 3230.9935,
+      "Smallest cluster %": 8.2603
+    },
+    {
+      "k": 6,
+      "Inertia": 2835.9221,
+      "Silhouette": 0.3134,
+      "Davies-Bouldin": 1.0138,
+      "Calinski-Harabasz": 3102.9773,
+      "Smallest cluster %": 7.8219
+    },
+    {
+      "k": 7,
+      "Inertia": 2528.0286,
+      "Silhouette": 0.3041,
+      "Davies-Bouldin": 0.9892,
+      "Calinski-Harabasz": 2987.9242,
+      "Smallest cluster %": 4.9608
+    },
+    {
+      "k": 8,
+      "Inertia": 2326.6618,
+      "Silhouette": 0.297,
+      "Davies-Bouldin": 1.015,
+      "Calinski-Harabasz": 2835.5963,
+      "Smallest cluster %": 4.2686
+    },
+    {
+      "k": 9,
+      "Inertia": 2146.5713,
+      "Silhouette": 0.2809,
+      "Davies-Bouldin": 1.0215,
+      "Calinski-Harabasz": 2733.9994,
+      "Smallest cluster %": 4.8685
+    },
+    {
+      "k": 10,
+      "Inertia": 1987.6814,
+      "Silhouette": 0.2768,
+      "Davies-Bouldin": 1.0276,
+      "Calinski-Harabasz": 2662.2988,
+      "Smallest cluster %": 2.2381
+    }
+  ],
+  "metrics": {
+    "K-Means (k=5, k-means++)": {
+      "Silhouette": 0.3182,
+      "Davies-Bouldin": 0.9829,
+      "Calinski-Harabasz": 3230.9935
+    },
+    "Agglomerative (k=5, Ward)": {
+      "Silhouette": 0.2226,
+      "Davies-Bouldin": 1.3071,
+      "Calinski-Harabasz": 2505.3781
+    }
+  },
+  "linkage_comparison": [
+    {
+      "Linkage": "ward",
+      "Silhouette": 0.2226,
+      "Davies-Bouldin": 1.3071,
+      "Calinski-Harabasz": 2505.3781,
+      "Largest cluster %": 29.234
+    },
+    {
+      "Linkage": "complete",
+      "Silhouette": 0.095,
+      "Davies-Bouldin": 0.8629,
+      "Calinski-Harabasz": 696.4119,
+      "Largest cluster %": 85.533
+    },
+    {
+      "Linkage": "average",
+      "Silhouette": 0.3899,
+      "Davies-Bouldin": 0.6326,
+      "Calinski-Harabasz": 1196.2985,
+      "Largest cluster %": 61.8366
+    },
+    {
+      "Linkage": "single",
+      "Silhouette": 0.4215,
+      "Davies-Bouldin": 0.4062,
+      "Calinski-Harabasz": 11.4323,
+      "Largest cluster %": 99.8616
+    }
+  ],
+  "agreement": {
+    "ARI": 0.4216,
+    "NMI": 0.5345
+  },
+  "pca_explained_variance": [
+    0.7515,
+    0.1871
+  ],
+  "segments": [
+    {
+      "Cluster": 0,
+      "Customers": 358,
+      "Recency_median": 8.0,
+      "Frequency_median": 15.0,
+      "Monetary_median": 5795.0,
+      "Monetary_total": 4703439.82,
+      "AvgBasket_median": 397.12,
+      "Tenure_median": 366.0,
+      "UniqueProducts_median": 148.0,
+      "UK_share": 88.83,
+      "Customer_%": 8.26,
+      "Revenue_%": 53.83,
+      "Segment": "Champions"
+    },
+    {
+      "Cluster": 1,
+      "Customers": 1136,
+      "Recency_median": 219.0,
+      "Frequency_median": 1.0,
+      "Monetary_median": 239.44,
+      "Monetary_total": 305918.55,
+      "AvgBasket_median": 197.82,
+      "Tenure_median": 244.0,
+      "UniqueProducts_median": 14.0,
+      "UK_share": 91.99,
+      "Customer_%": 26.21,
+      "Revenue_%": 3.5,
+      "Segment": "Lost / Hibernating"
+    },
+    {
+      "Cluster": 2,
+      "Customers": 965,
+      "Recency_median": 17.0,
+      "Frequency_median": 5.0,
+      "Monetary_median": 1717.36,
+      "Monetary_total": 1984297.09,
+      "AvgBasket_median": 320.33,
+      "Tenure_median": 284.0,
+      "UniqueProducts_median": 79.0,
+      "UK_share": 90.47,
+      "Customer_%": 22.27,
+      "Revenue_%": 22.71,
+      "Segment": "Loyal Customers"
+    },
+    {
+      "Cluster": 3,
+      "Customers": 869,
+      "Recency_median": 26.0,
+      "Frequency_median": 1.0,
+      "Monetary_median": 335.86,
+      "Monetary_total": 320858.77,
+      "AvgBasket_median": 215.08,
+      "Tenure_median": 51.0,
+      "UniqueProducts_median": 24.0,
+      "UK_share": 92.17,
+      "Customer_%": 20.05,
+      "Revenue_%": 3.67,
+      "Segment": "New / Promising"
+    },
+    {
+      "Cluster": 4,
+      "Customers": 1006,
+      "Recency_median": 83.0,
+      "Frequency_median": 3.0,
+      "Monetary_median": 980.74,
+      "Monetary_total": 1422713.41,
+      "AvgBasket_median": 357.34,
+      "Tenure_median": 267.0,
+      "UniqueProducts_median": 44.5,
+      "UK_share": 87.38,
+      "Customer_%": 23.21,
+      "Revenue_%": 16.28,
+      "Segment": "At-Risk"
+    }
+  ],
+  "random_state": 42
+}

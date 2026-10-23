@@ -1,0 +1,412 @@
+{
+  "cleaning_log": [
+    {
+      "step": "Raw transaction lines",
+      "rows": 541909,
+      "customers": 4372,
+      "rows_removed": 0
+    },
+    {
+      "step": "Drop lines without CustomerID (cannot be assigned to a customer)",
+      "rows": 406829,
+      "customers": 4372,
+      "rows_removed": 135080
+    },
+    {
+      "step": "Drop cancelled invoices (InvoiceNo starts with \"C\")",
+      "rows": 397924,
+      "customers": 4339,
+      "rows_removed": 8905
+    },
+    {
+      "step": "Drop non-positive quantity / price (returns, adjustments)",
+      "rows": 397884,
+      "customers": 4338,
+      "rows_removed": 40
+    },
+    {
+      "step": "Drop non-product codes (postage, manual, bank charges, \u2026)",
+      "rows": 396337,
+      "customers": 4334,
+      "rows_removed": 1547
+    },
+    {
+      "step": "Drop exact duplicate lines",
+      "rows": 391150,
+      "customers": 4334,
+      "rows_removed": 5187
+    }
+  ],
+  "monthly": [
+    {
+      "Month": "Dec-10",
+      "Revenue": 823746.14,
+      "InvoiceNo": 1559,
+      "CustomerID": 885
+    },
+    {
+      "Month": "Jan-11",
+      "Revenue": 691364.56,
+      "InvoiceNo": 1086,
+      "CustomerID": 741
+    },
+    {
+      "Month": "Feb-11",
+      "Revenue": 523631.89,
+      "InvoiceNo": 1100,
+      "CustomerID": 758
+    },
+    {
+      "Month": "Mar-11",
+      "Revenue": 717639.36,
+      "InvoiceNo": 1454,
+      "CustomerID": 974
+    },
+    {
+      "Month": "Apr-11",
+      "Revenue": 537808.62,
+      "InvoiceNo": 1246,
+      "CustomerID": 856
+    },
+    {
+      "Month": "May-11",
+      "Revenue": 770536.02,
+      "InvoiceNo": 1681,
+      "CustomerID": 1056
+    },
+    {
+      "Month": "Jun-11",
+      "Revenue": 761739.9,
+      "InvoiceNo": 1533,
+      "CustomerID": 991
+    },
+    {
+      "Month": "Jul-11",
+      "Revenue": 719221.19,
+      "InvoiceNo": 1475,
+      "CustomerID": 949
+    },
+    {
+      "Month": "Aug-11",
+      "Revenue": 759138.38,
+      "InvoiceNo": 1361,
+      "CustomerID": 935
+    },
+    {
+      "Month": "Sep-11",
+      "Revenue": 1058590.17,
+      "InvoiceNo": 1837,
+      "CustomerID": 1266
+    },
+    {
+      "Month": "Oct-11",
+      "Revenue": 1154979.3,
+      "InvoiceNo": 2040,
+      "CustomerID": 1364
+    },
+    {
+      "Month": "Nov-11",
+      "Revenue": 1509496.33,
+      "InvoiceNo": 2769,
+      "CustomerID": 1664
+    },
+    {
+      "Month": "Dec-11",
+      "Revenue": 638792.68,
+      "InvoiceNo": 819,
+      "CustomerID": 615
+    }
+  ],
+  "countries": [
+    {
+      "Country": "United Kingdom",
+      "lines": 485123,
+      "revenue": 9025222.08,
+      "customers": 3920
+    },
+    {
+      "Country": "Netherlands",
+      "lines": 2359,
+      "revenue": 285446.34,
+      "customers": 9
+    },
+    {
+      "Country": "EIRE",
+      "lines": 7890,
+      "revenue": 283453.96,
+      "customers": 3
+    },
+    {
+      "Country": "Germany",
+      "lines": 9040,
+      "revenue": 228867.14,
+      "customers": 94
+    },
+    {
+      "Country": "France",
+      "lines": 8407,
+      "revenue": 209715.11,
+      "customers": 87
+    },
+    {
+      "Country": "Australia",
+      "lines": 1182,
+      "revenue": 138521.31,
+      "customers": 9
+    },
+    {
+      "Country": "Spain",
+      "lines": 2484,
+      "revenue": 61577.11,
+      "customers": 30
+    },
+    {
+      "Country": "Switzerland",
+      "lines": 1966,
+      "revenue": 57089.9,
+      "customers": 21
+    },
+    {
+      "Country": "Belgium",
+      "lines": 2031,
+      "revenue": 41196.34,
+      "customers": 25
+    },
+    {
+      "Country": "Sweden",
+      "lines": 451,
+      "revenue": 38378.33,
+      "customers": 8
+    },
+    {
+      "Country": "Japan",
+      "lines": 321,
+      "revenue": 37416.37,
+      "customers": 8
+    },
+    {
+      "Country": "Norway",
+      "lines": 1071,
+      "revenue": 36165.44,
+      "customers": 10
+    },
+    {
+      "Country": "Portugal",
+      "lines": 1501,
+      "revenue": 33747.1,
+      "customers": 19
+    },
+    {
+      "Country": "Finland",
+      "lines": 685,
+      "revenue": 22546.08,
+      "customers": 12
+    },
+    {
+      "Country": "Singapore",
+      "lines": 222,
+      "revenue": 21279.29,
+      "customers": 1
+    }
+  ],
+  "weekday_hour": {
+    "index": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Sunday"
+    ],
+    "columns": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "values": [
+      [
+        0.0,
+        4.0,
+        89.0,
+        275.0,
+        353.0,
+        356.0,
+        497.0,
+        453.0,
+        396.0,
+        367.0,
+        240.0,
+        94.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.0,
+        118.0,
+        315.0,
+        416.0,
+        428.0,
+        556.0,
+        502.0,
+        420.0,
+        456.0,
+        212.0,
+        117.0,
+        9.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.0,
+        116.0,
+        303.0,
+        448.0,
+        431.0,
+        629.0,
+        509.0,
+        453.0,
+        426.0,
+        263.0,
+        104.0,
+        0.0,
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        9.0,
+        122.0,
+        306.0,
+        462.0,
+        390.0,
+        594.0,
+        496.0,
+        472.0,
+        452.0,
+        351.0,
+        261.0,
+        179.0,
+        135.0,
+        16.0
+      ],
+      [
+        0.0,
+        6.0,
+        121.0,
+        283.0,
+        457.0,
+        401.0,
+        482.0,
+        431.0,
+        406.0,
+        295.0,
+        155.0,
+        91.0,
+        2.0,
+        9.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        225.0,
+        390.0,
+        461.0,
+        362.0,
+        310.0,
+        340.0,
+        114.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "top_products": [
+    {
+      "Description": "PAPER CRAFT , LITTLE BIRDIE",
+      "Revenue": 168469.6
+    },
+    {
+      "Description": "REGENCY CAKESTAND 3 TIER",
+      "Revenue": 142264.75
+    },
+    {
+      "Description": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "Revenue": 100392.1
+    },
+    {
+      "Description": "JUMBO BAG RED RETROSPOT",
+      "Revenue": 85040.54
+    },
+    {
+      "Description": "MEDIUM CERAMIC TOP STORAGE JAR",
+      "Revenue": 81416.73
+    },
+    {
+      "Description": "PARTY BUNTING",
+      "Revenue": 68785.23
+    },
+    {
+      "Description": "ASSORTED COLOUR BIRD ORNAMENT",
+      "Revenue": 56413.03
+    },
+    {
+      "Description": "RABBIT NIGHT LIGHT",
+      "Revenue": 51251.24
+    },
+    {
+      "Description": "CHILLI LIGHTS",
+      "Revenue": 46265.11
+    },
+    {
+      "Description": "PAPER CHAIN KIT 50'S CHRISTMAS ",
+      "Revenue": 42584.13
+    }
+  ],
+  "quality": [
+    {
+      "Issue": "Exact duplicate rows",
+      "rows": 5268,
+      "share_%": 0.97
+    },
+    {
+      "Issue": "Cancelled invoice lines (InvoiceNo starts with \"C\")",
+      "rows": 9288,
+      "share_%": 1.71
+    },
+    {
+      "Issue": "Lines with Quantity <= 0",
+      "rows": 10624,
+      "share_%": 1.96
+    },
+    {
+      "Issue": "Lines with UnitPrice <= 0",
+      "rows": 2517,
+      "share_%": 0.46
+    },
+    {
+      "Issue": "Lines without CustomerID",
+      "rows": 135080,
+      "share_%": 24.93
+    }
+  ]
+}
