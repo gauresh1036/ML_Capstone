@@ -1,12 +1,21 @@
-# Saved Model Artifacts (Review 1)
+# Saved models
 
-This directory stores serialized models (via `joblib`) for the best-performing algorithms as outlined in the Capstone Guidelines (Section 8).
+Each notebook saves its final model here with `joblib`. Each file is a complete scikit-learn object: preprocessing
+is fitted on the training split only and bundled with the estimator, so a model can be applied to raw rows directly.
 
-## Models Included:
-1. `best_regression_gbr.pkl`:
-   - Algorithm: Gradient Boosting Regressor (Hyperparameter-tuned)
-   - Parameters: `learning_rate=0.03, max_depth=4, n_estimators=400, subsample=0.8`
-   - Evaluation Metric: $R^2 = 0.9242$ on held-out test split
-2. `best_classification_dt.pkl`:
-   - Algorithm: Decision Tree Classifier (Tuned `max_depth=5`)
-   - Evaluation Metric: Weighted F1 = 0.8950, Accuracy = 0.8959
+| File | Created by | Contents | Input |
+|------|-----------|----------|-------|
+| `regression_best_model.pkl` | `notebooks/regression.ipynb` §8 | `Pipeline(ColumnTransformer → TransformedTargetRegressor(best regressor, log1p/expm1))` | raw Ames columns + the 6 engineered features (`app/features.py`) → price in USD |
+| `classification_best_model.pkl` | `notebooks/classification.ipynb` §9 | `Pipeline(ColumnTransformer → tuned GradientBoostingClassifier)` | raw session columns + the 5 engineered features (`app/features.py`) → `predict_proba` |
+| `regression_all_models.pkl` | `notebooks/regression.ipynb` §8 | dict of all 10 tuned regressors as raw-input pipelines (used by the GUI model lab) | same as above |
+| `classification_all_models.pkl` | `notebooks/classification.ipynb` §9 | dict of all 10 tuned classifiers as raw-input pipelines (used by the GUI model lab) | same as above |
+| `clustering_kmeans.pkl` | `notebooks/clustering.ipynb` §9 | dict: `pipeline` (log1p → StandardScaler → KMeans), `pca`, `segment_names`, `profile`, `sample_points` | `Recency`, `Frequency`, `Monetary` → cluster id |
+
+Test-set metrics for each model are stored next to them in `reports/*_results.json`.
+
+```python
+import joblib, pandas as pd
+model = joblib.load('models/classification_best_model.pkl')
+```
+
+The pickles require **scikit-learn 1.8.0** (pinned in `requirements.txt`).
