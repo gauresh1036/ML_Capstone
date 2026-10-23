@@ -31,6 +31,8 @@ streamlit run app/app.py
 
 Then open <http://localhost:8501>.
 
+**Live app:** https://gauresh1036.streamlit.app
+
 ## Deploy publicly (Streamlit Community Cloud — free)
 
 1. Push the repository to GitHub (public repository).

@@ -3,7 +3,9 @@
 **End-to-end machine-learning pipelines for regression, classification and clustering**
 **Team Zenith** · B.Tech Computer Science & Engineering · III Year · Academic Year 2026–27
 
-![Python](https://img.shields.io/badge/Python-3.13-blue) ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.8.0-orange) ![Streamlit](https://img.shields.io/badge/GUI-Streamlit-red) ![Reproducible](https://img.shields.io/badge/random__state-42-green)
+**🚀 Live dashboard: [gauresh1036.streamlit.app](https://gauresh1036.streamlit.app)**
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gauresh1036.streamlit.app) ![Python](https://img.shields.io/badge/Python-3.13-blue) ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.8.0-orange) ![Streamlit](https://img.shields.io/badge/GUI-Streamlit-red) ![Reproducible](https://img.shields.io/badge/random__state-42-green)
 
 | | Regression | Classification | Clustering |
 |---|---|---|---|
@@ -181,7 +183,7 @@ python -m nbconvert --to notebook --execute --inplace notebooks/classification.i
 python -m nbconvert --to notebook --execute --inplace notebooks/clustering.ipynb
 ```
 
-**GUI (bonus):**
+**GUI (bonus):** deployed publicly at **https://gauresh1036.streamlit.app** (Streamlit Community Cloud). To run it locally:
 
 ```bash
 streamlit run app/app.py
@@ -213,7 +215,7 @@ python -m pytest tests -q
 | C1 — clean top-to-bottom notebooks, modular helper functions, comments | all notebooks (§0 helpers) |
 | C2 — README: dataset, problem, results table, setup, how to run | this file |
 | C3 — meaningful commit history; `requirements.txt` | git log; `requirements.txt` |
-| Bonus — GUI (+ public deployment) | `app/` |
+| Bonus — GUI + public deployment | `app/` · live at https://gauresh1036.streamlit.app |
 
 ## 9. Academic integrity & AI assistance
 
