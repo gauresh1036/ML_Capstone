@@ -51,3 +51,13 @@ AMEX HOUSING (Regression)/
 online+shoppers+purchasing+intention+dataset (Classification)/
 online+retail (Clustering)/
 
+
+# Working copies / scratch (not part of the submission)
+CASE STUDY 2/
+__MACOSX/
+notebooks/*_debug.ipynb
+.pytest_cache/
+*.xlsx#
+VIVA_PREP.md
+.claude/
+CASE STUDY 2 - original backup/
